@@ -1,4 +1,4 @@
-#Final Project#
+# Final Project #
 **Authors:**
 	**Lucas Jeay-Bizot**
 	**Jeremy Wayland**
@@ -6,7 +6,7 @@
 
 This Git Repo contains the code, paper and presentation for our CS 530 final project.
 
-##Description of Directories:##
+## Description of Directories: ##
 
 - `Data/`
 	- This directory should contain the data used in our analysis. The directory is currently empty due to the large size of the data files, but the needed data can be downloaded from [here](https://drive.google.com/drive/folders/1RLKVqrd7dmyu7oeTLaVNLNHCbL5rcHaN). The relevant files are the subject two data: [data_cube_s2.mat](https://drive.google.com/file/d/1ZTKHc1-FN9ApRAEsPEbOTWhgtJE0gKKr/view?usp=sharing), and the subject one data: [data_cube_s1_ica.mat](https://drive.google.com/file/d/1-NG2LTa2dOwXzO1qo8yCBcuSuQwGtppz/view?usp=sharing)
@@ -23,7 +23,7 @@ This Git Repo contains the code, paper and presentation for our CS 530 final pro
 		- `bin/`
 			- This directory contains pickled dictionary objects resulting from running `HyperparameterTuningModelSelection.ipynb`. Due to large file sizes, all pickles are currently zipped.	
 
-##Instructions on running code and re-generating plots##
+## Instructions on running code and re-generating plots ##
 
 - Before running any scripts, experiment data must be downloaded to `./Data/`. Two data-matrices need to be downloaded, data from [subject 1](https://drive.google.com/file/d/1-NG2LTa2dOwXzO1qo8yCBcuSuQwGtppz/view?usp=sharing) and data from [subject 2](https://drive.google.com/file/d/1ZTKHc1-FN9ApRAEsPEbOTWhgtJE0gKKr/view?usp=sharing).
 - To tune hyperparameters for all models and generate plots for model classification accuracy on entire dataset (before taking sliding windows), run all code blocks in [./src/HyperparameterTuningModelSelection.ipynb](./src/HyperparameterTuningModelSelection.ipynb).
