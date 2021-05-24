@@ -1,11 +1,8 @@
 # Final Project #
-**Authors:**
-
-	**Lucas Jeay-Bizot**
-
-	**Jeremy Wayland**
-
-	**Daniel Briseno**
+**Authors:** 
+- **Lucas Jeay-Bizot**
+- **Jeremy Wayland**
+- **Daniel Briseno**
 
 This Git Repo contains the code, paper and presentation for our CS 530 final project.
 
