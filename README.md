@@ -25,7 +25,7 @@ This Git Repo contains the code, paper and presentation for our CS 530 final pro
 
 ## Instructions on running code and re-generating plots ##
 
-- Before running any scripts, experiment data must be downloaded to `./Data/`. Two data-matrices need to be downloaded, data from [subject 1](https://drive.google.com/file/d/1-NG2LTa2dOwXzO1qo8yCBcuSuQwGtppz/view?usp=sharing) and data from [subject 2](https://drive.google.com/file/d/1ZTKHc1-FN9ApRAEsPEbOTWhgtJE0gKKr/view?usp=sharing).
+- Before running any scripts, experiment data must be downloaded to [./Data/](./Data/). Two data-matrices need to be downloaded, data from [subject 1](https://drive.google.com/file/d/1-NG2LTa2dOwXzO1qo8yCBcuSuQwGtppz/view?usp=sharing) and data from [subject 2](https://drive.google.com/file/d/1ZTKHc1-FN9ApRAEsPEbOTWhgtJE0gKKr/view?usp=sharing).
 - To tune hyperparameters for all models and generate plots for model classification accuracy on entire dataset (before taking sliding windows), run all code blocks in [./src/HyperparameterTuningModelSelection.ipynb](./src/HyperparameterTuningModelSelection.ipynb).
 	- After running this python notebook two files named `clfs_s1_NoFilt.p` and `clfs_s2_NoFilt.p` will be written to [./src/bin/](./src/bin). These files will contain a list of pickled objects corresponding to hyperparameter tuned and cross-validated models. For a full description of the contents of these pickled files, see [./src/HyperparameterTuningModelSelection.ipynb](./src/HyperparameterTuningModelSelection.ipynb). Additionally, after running this notebook all generated plots will be saved to [./Plots](./Plots).
 	- **WARNING**: This notebook takes approximatley 24hrs to run on 7 cores.
