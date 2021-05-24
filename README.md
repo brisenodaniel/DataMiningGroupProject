@@ -19,7 +19,7 @@ This Git Repo contains the code, paper and presentation for our CS 530 final pro
 - `src/`
 	- This directory contains .ipynb files and zipped binary files used to generate results. More specifically:
 		- `HyperparameterTuningModelSelection.ipynb`: ipynb used to hyperparameter tune models and generate plots of model classification accuracy on the entire dataset (before taking sliding windows on sample time). 
-		- **Jeremy fill in here**
+		- `sliding_window_analysis.ipynb`
 		- `bin/`
 			- This directory contains pickled dictionary objects resulting from running `HyperparameterTuningModelSelection.ipynb`. Due to large file sizes, all pickles are currently zipped.	
 
@@ -29,5 +29,6 @@ This Git Repo contains the code, paper and presentation for our CS 530 final pro
 - To tune hyperparameters for all models and generate plots for model classification accuracy on entire dataset (before taking sliding windows), run all code blocks in [./src/HyperparameterTuningModelSelection.ipynb](./src/HyperparameterTuningModelSelection.ipynb).
 	- After running this python notebook two files named `clfs_s1_NoFilt.p` and `clfs_s2_NoFilt.p` will be written to [./src/bin/](./src/bin). These files will contain a list of pickled objects corresponding to hyperparameter tuned and cross-validated models. For a full description of the contents of these pickled files, see [./src/HyperparameterTuningModelSelection.ipynb](./src/HyperparameterTuningModelSelection.ipynb). Additionally, after running this notebook all generated plots will be saved to [./Plots](./Plots).
 	- **WARNING**: This notebook takes approximatley 12hrs to run on 7 cores.
-- To generate plots on sliding windows **Jeremy fill in here**
+- To generate plots on sliding windows run all code in [./src/sliding_window_analysis.ipynb](./src/sliding_window_analysis.ipynb)
 	- Note, in order for this python notebook to run, the pickle files created by [./src/HyperparameterTuningModelSelection.ipynb](./src/HyperparameterTuningModelSelection.ipynb) must be present in [./src/bin/](./src/bin/). In order to run this file without waiting for the lengthy runtimes needed for Hyperparameter tuning, unzip [S2_nofilt.tar.gz](./src/bin/S2_nofilt.tar.gz) and [S1_noFilt.tar.gz](./src/bin/S1_noFilt.tar.gz) located in [./src/bin](./src/bin).  
+	- There are functions to customize the shape of your sliding window, visualize model comparisons, and analyze the performance on both subjects.
