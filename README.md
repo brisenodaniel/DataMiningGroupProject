@@ -31,5 +31,5 @@ This Git Repo contains the code, paper and presentation for our CS 530 final pro
 	- **WARNING**: This notebook takes approximatley 12hrs to run on 7 cores.
 - To generate plots on sliding windows run all code in [./src/sliding_window_analysis.ipynb](./src/sliding_window_analysis.ipynb)
 	- Note, in order for this python notebook to run, the pickle files created by [./src/HyperparameterTuningModelSelection.ipynb](./src/HyperparameterTuningModelSelection.ipynb) must be present in [./src/bin/](./src/bin/). In order to run this file without waiting for the lengthy runtimes needed for Hyperparameter tuning, unzip [S2_nofilt.tar.gz](./src/bin/S2_nofilt.tar.gz) and [S1_noFilt.tar.gz](./src/bin/S1_noFilt.tar.gz) located in [./src/bin](./src/bin).
-		- This can be done by running `$tar -xf S1_nofilt.tar.gz` and `$tar -xf S2_nofilt.tar.gz`.
+		- This can be done by running `$tar -xf ./src/bin/S1_nofilt.tar.gz` and `$tar -xf ./src/bin/S2_nofilt.tar.gz`.
 	- There are functions to customize the shape of your sliding window, visualize model comparisons, and analyze the performance on both subjects.
